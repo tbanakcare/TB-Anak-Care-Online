@@ -7,8 +7,8 @@
 <div id="loading" class="panel loading-panel" role="status">Menyiapkan kalender…</div>
 <p id="error" class="message" role="alert"></p>
 <div id="app" class="hidden">
-<div id="previewNotice" class="preview-notice hidden" role="status"><strong>Pratinjau kalender</strong><span>Ini hanya contoh tampilan. Agar bisa menyimpan catatan obat, buka tautan pribadi yang diberikan petugas kesehatan.</span></div>
-<div class="identity-strip"><div><span id="accessPill" class="pill">● Tautan pendamping aktif</span><strong id="patient"></strong></div><span class="identity-note">Hanya untuk wali yang telah diverifikasi oleh petugas</span></div>
+
+<div class="identity-strip"><div><span id="accessPill" class="pill">● Akses pendamping</span><strong id="patient"></strong></div><span class="identity-note">Pencatatan online tersedia melalui tautan pribadi pasien</span></div>
 <div class="calendar-layout">
 <section class="calendar-card" aria-label="Kalender laporan minum obat">
 <div class="calendar-toolbar"><div><span class="micro-label">PILIH TANGGAL</span><h2 id="monthTitle"></h2></div><div class="toolbar-actions"><button id="prev" class="month-arrow" aria-label="Bulan sebelumnya">‹</button><button id="today" class="today-button">Hari ini</button><button id="next" class="month-arrow" aria-label="Bulan berikutnya">›</button></div></div>
@@ -19,7 +19,7 @@
 <aside class="summary-card"><div class="summary-ornament"><img src="assets/icons/calendar.svg" alt="" width="42" height="42"></div><span class="micro-label">RINGKASAN TANGGAL</span><h2 id="selectedTitle"></h2><p id="selectedStatus" class="status-blurb">Belum ada catatan obat pada tanggal ini.</p>
 <div class="summary-divider"></div><div class="record-guide"><strong>Pencatatan obat</strong><p>Tekan salah satu tombol di bawah. Status hanya untuk tanggal yang dipilih.</p></div>
 <div class="status-buttons"><button id="taken" class="record-button taken-button"><span class="circle-icon">✓</span><strong>Sudah minum</strong><small>Catat untuk tanggal ini</small></button><button id="notTaken" class="record-button missed-button"><span class="circle-icon">–</span><strong>Belum minum</strong><small>Catat untuk tanggal ini</small></button></div>
-<p id="result" role="status" aria-live="polite" class="save-feedback"></p>
+<p id="accessHelp" class="save-feedback hidden">Untuk menyimpan catatan ke database, buka tautan khusus pasien yang dibuat petugas. Kalender tetap bisa dilihat tanpa tautan.</p><p id="result" role="status" aria-live="polite" class="save-feedback"></p>
 <div class="privacy-tip"><span aria-hidden="true">♡</span><p>Catatan ini adalah laporan wali, bukan bukti obat telah diminum. Bila ada masalah obat, hubungi petugas kesehatan.</p></div>
 </aside></div></div>
 <div class="support-note"><strong>Butuh bantuan?</strong> Bila obat terlewat, anak mengalami keluhan, atau ingin mengubah jadwal pemberian, hubungi petugas kesehatan. Jangan mengubah dosis sendiri atau membagikan tautan pribadi ini.</div>
