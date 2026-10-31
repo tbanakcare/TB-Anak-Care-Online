@@ -4,14 +4,15 @@
 <header class="premium-header"><a class="brand" href="index.html"><span class="brand-flower" aria-hidden="true">✿</span><span><b>TB Anak <em>Care</em></b><small>Teman tumbuh sehat si kecil</small></span></a><nav><a href="index.html">Beranda</a><a href="index.html#edukasi">Belajar</a><a class="nav-active" href="wali.html">Catatan Obat</a></nav><span class="header-caption">Portal Pendamping</span></header>
 <main class="premium-main">
 <div class="page-heading"><span class="eyebrow">✦ PENCATATAN HARIAN</span><h1>Kalender Minum Obat <span>Si Kecil</span></h1><p>Catat setiap hari dengan satu sentuhan. Laporan akan dikirim kepada petugas yang mendampingi.</p></div>
-<div id="loading" class="panel loading-panel" role="status">Memeriksa tautan pribadi pasien…</div>
+<div id="loading" class="panel loading-panel" role="status">Menyiapkan kalender…</div>
 <p id="error" class="message" role="alert"></p>
 <div id="app" class="hidden">
-<div class="identity-strip"><div><span class="pill">● Tautan pendamping aktif</span><strong id="patient"></strong></div><span class="identity-note">Hanya untuk wali yang telah diverifikasi oleh petugas</span></div>
+<div id="previewNotice" class="preview-notice hidden" role="status"><strong>Pratinjau kalender</strong><span>Ini hanya contoh tampilan. Agar bisa menyimpan catatan obat, buka tautan pribadi yang diberikan petugas kesehatan.</span></div>
+<div class="identity-strip"><div><span id="accessPill" class="pill">● Tautan pendamping aktif</span><strong id="patient"></strong></div><span class="identity-note">Hanya untuk wali yang telah diverifikasi oleh petugas</span></div>
 <div class="calendar-layout">
 <section class="calendar-card" aria-label="Kalender laporan minum obat">
 <div class="calendar-toolbar"><div><span class="micro-label">PILIH TANGGAL</span><h2 id="monthTitle"></h2></div><div class="toolbar-actions"><button id="prev" class="month-arrow" aria-label="Bulan sebelumnya">‹</button><button id="today" class="today-button">Hari ini</button><button id="next" class="month-arrow" aria-label="Bulan berikutnya">›</button></div></div>
-<div id="calendar" class="grid premium-grid" aria-label="Tanggal pada bulan yang dipilih"></div>
+<div id="calendar" class="premium-grid" aria-label="Tanggal pada bulan yang dipilih"></div>
 <div class="calendar-legend"><span><i class="legend-dot green"></i>Sudah minum</span><span><i class="legend-dot orange"></i>Belum minum</span><span><i class="legend-dot gray"></i>Belum dicatat</span></div>
 <p class="calendar-footnote">Tanggal kosong berarti belum ada laporan. Kalender tidak otomatis menandai obat terlewat.</p>
 </section>
