@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="referrer" content="no-referrer"><title>Kalender Obat | TB Anak Care</title><link rel="stylesheet" href="app.css"><link rel="stylesheet" href="calendar-premium.css"></head>
+<body class="calendar-body">
+<header class="premium-header"><a class="brand" href="index.html"><span class="brand-flower" aria-hidden="true">✿</span><span><b>TB Anak <em>Care</em></b><small>Teman tumbuh sehat si kecil</small></span></a><nav><a href="index.html">Beranda</a><a href="index.html#edukasi">Belajar</a><a class="nav-active" href="wali.html">Catatan Obat</a></nav><span class="header-caption">Portal Pendamping</span></header>
+<main class="premium-main">
+<div class="page-heading"><span class="eyebrow">✦ PENCATATAN HARIAN</span><h1>Kalender Minum Obat <span>Si Kecil</span></h1><p>Catat setiap hari dengan satu sentuhan. Laporan akan dikirim kepada petugas yang mendampingi.</p></div>
+<div id="loading" class="panel loading-panel" role="status">Memeriksa tautan pribadi pasien…</div>
+<p id="error" class="message" role="alert"></p>
+<div id="app" class="hidden">
+<div class="identity-strip"><div><span class="pill">● Tautan pendamping aktif</span><strong id="patient"></strong></div><span class="identity-note">Hanya untuk wali yang telah diverifikasi oleh petugas</span></div>
+<div class="calendar-layout">
+<section class="calendar-card" aria-label="Kalender laporan minum obat">
+<div class="calendar-toolbar"><div><span class="micro-label">PILIH TANGGAL</span><h2 id="monthTitle"></h2></div><div class="toolbar-actions"><button id="prev" class="month-arrow" aria-label="Bulan sebelumnya">‹</button><button id="today" class="today-button">Hari ini</button><button id="next" class="month-arrow" aria-label="Bulan berikutnya">›</button></div></div>
+<div id="calendar" class="grid premium-grid" aria-label="Tanggal pada bulan yang dipilih"></div>
+<div class="calendar-legend"><span><i class="legend-dot green"></i>Sudah minum</span><span><i class="legend-dot orange"></i>Belum minum</span><span><i class="legend-dot gray"></i>Belum dicatat</span></div>
+<p class="calendar-footnote">Tanggal kosong berarti belum ada laporan. Kalender tidak otomatis menandai obat terlewat.</p>
+</section>
+<aside class="summary-card"><div class="summary-ornament"><img src="assets/icons/calendar.svg" alt="" width="42" height="42"></div><span class="micro-label">RINGKASAN TANGGAL</span><h2 id="selectedTitle"></h2><p id="selectedStatus" class="status-blurb">Belum ada catatan obat pada tanggal ini.</p>
+<div class="summary-divider"></div><div class="record-guide"><strong>Pencatatan obat</strong><p>Tekan salah satu tombol di bawah. Status hanya untuk tanggal yang dipilih.</p></div>
+<div class="status-buttons"><button id="taken" class="record-button taken-button"><span class="circle-icon">✓</span><strong>Sudah minum</strong><small>Catat untuk tanggal ini</small></button><button id="notTaken" class="record-button missed-button"><span class="circle-icon">–</span><strong>Belum minum</strong><small>Catat untuk tanggal ini</small></button></div>
+<p id="result" role="status" aria-live="polite" class="save-feedback"></p>
+<div class="privacy-tip"><span aria-hidden="true">♡</span><p>Catatan ini adalah laporan wali, bukan bukti obat telah diminum. Bila ada masalah obat, hubungi petugas kesehatan.</p></div>
+</aside></div></div>
+<div class="support-note"><strong>Butuh bantuan?</strong> Bila obat terlewat, anak mengalami keluhan, atau ingin mengubah jadwal pemberian, hubungi petugas kesehatan. Jangan mengubah dosis sendiri atau membagikan tautan pribadi ini.</div>
+</main><script src="config.js"></script><script src="shared.js"></script><script src="wali.js"></script>
+</body></html>
